@@ -8,6 +8,7 @@ import {
   Twitch,
   Twitter,
   Facebook,
+  Github,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -123,20 +124,14 @@ export const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/wassim__trabelsi/"
+                  href="https://github.com/twassim1234"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Instagram />
+                  <Github />
                 </a>
-
-                <a
-                  href="https://www.facebook.com/wassim.trabelsi.5249"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Facebook />
-                </a>
+                
+          
               </div>
             </div>
           </div>
