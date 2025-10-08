@@ -82,13 +82,13 @@ export const InternshipsSection = () => {
               </div>
 
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-1">{intern.role}</h3>
-                <p className="text-xs text-muted-foreground mb-2">
+                <h3 className="text-2xl font-semibold mb-1">{intern.role}</h3>
+                <p className="text-lg text-muted-foreground mb-2">
                   {intern.company} | {intern.duration}
                 </p>
 
                 {/* Bullet Points */}
-                <ul className="list-disc list-inside text-xs text-muted-foreground mb-3">
+                <ul className="list-disc list-inside text-sm text-muted-foreground mb-3">
                   {intern.description.map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}

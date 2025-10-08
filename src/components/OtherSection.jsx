@@ -114,12 +114,12 @@ const memberships = [
                 </div>
   
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold mb-1">{member.role}</h3>
-                  <p className="text-xs text-muted-foreground mb-2">
+                  <h3 className="text-2xl font-semibold mb-1">{member.role}</h3>
+                  <p className="text-lg text-muted-foreground mb-2">
                     {member.organization} | {member.duration}
                   </p>
   
-                  <ul className="list-disc list-inside text-xs text-muted-foreground mb-3">
+                  <ul className="list-disc list-inside text-sm text-muted-foreground mb-3">
                     {member.description.map((point, index) => (
                       <li key={index}>{point}</li>
                     ))}

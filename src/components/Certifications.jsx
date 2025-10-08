@@ -3,11 +3,11 @@ import { ExternalLink } from "lucide-react";
 const certifications = [
   {
     id: 1,
-    title: "AWS",
-    description: "Demonstrated knowledge in designing and deploying scalable systems on AWS.",
+    title: "AWS Certified Cloud Practitioner (CLF-C02)",
+    description: "Validated foundational knowledge of AWS Cloud concepts, core services, security, pricing, and support to effectively contribute to cloud initiatives.",
     image: "/certifications/aws.png",
-    tags: ["AWS", "Cloud", "Solutions Architect"],
-    certificateUrl: "#",
+    tags: ["AWS", "Cloud", "Certification"],
+    certificateUrl: "#", // replace with your actual verification link if available
   },
   {
     id: 2,
@@ -132,8 +132,8 @@ export const CertificationsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-lg font-semibold mb-1">{cert.title}</h3>
-                <p className="text-muted-foreground text-xs mb-3">
+                <h3 className="text-2xl font-semibold mb-1">{cert.title}</h3>
+                <p className="text-muted-foreground text-sm mb-3">
                   {cert.description}
                 </p>
 
