@@ -27,7 +27,7 @@ export const ContactSection = () => {
 
     emailjs
     .sendForm(
-      "service_ykodjdr",
+      "service_ouzpvbc",
       "template_otywphn",
       form,
       "OKl83bhVxc81Ojkfu"
@@ -80,7 +80,7 @@ export const ContactSection = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Wassim.trabelsi.2002@gmail.com
+                    wassim.trabelsi.pro@gmail.com
                   </a>
                   
                 </div>
