@@ -45,7 +45,9 @@ export const Navbar = () => {
       <nav
         className={cn(
           "fixed w-full z-50 transition-all duration-300",
-          isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-sm" : "py-5"
+          isScrolled
+            ? "py-3 bg-background/80 backdrop-blur-md shadow-sm"
+            : "py-5"
         )}
       >
         <div className="container flex items-center justify-between">
@@ -88,6 +90,7 @@ export const Navbar = () => {
       </nav>
 
       {/* Overlay menu (md & sm) */}
+      {/* Overlay menu (md & sm) */}
       <div
         className={cn(
           "fixed inset-0 z-40 flex flex-col items-center justify-center",
@@ -98,18 +101,21 @@ export const Navbar = () => {
         )}
         onClick={() => setIsMenuOpen(false)} // Close menu on overlay click
       >
-          <div className="flex flex-col items-center space-y-8 text-xl">
+        <div
+          className="flex flex-col items-center space-y-8 text-xl"
+          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the background of the inner box
+        >
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
               className="text-foreground/90 hover:text-primary transition-colors duration-300"
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking a link
+              onClick={() => setIsMenuOpen(false)} // ✅ Close menu when clicking a link
             >
               {item.name}
             </a>
           ))}
-          <div onClick={(e) => e.stopPropagation()} className="pt-4">
+          <div className="pt-4">
             <ThemeToggle />
           </div>
         </div>

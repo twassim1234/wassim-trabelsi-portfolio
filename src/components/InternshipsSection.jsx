@@ -7,9 +7,9 @@ const internships = [
     role: "Cloud Security Intern",
     duration: "June 2025 - july 2025",
     description: [
-      "Developed responsive web applications using React and TailwindCSS.",
-      "Implemented reusable components and optimized performance.",
-      "Collaborated with designers and backend developers to integrate APIs."
+      "Designed and implemented a secure cloud development environment, enabling encrypted remote developer access and improving overall infrastructure security.",
+      "Configured and optimized firewall and DNS management systems, enhancing network protection and reducing unauthorized access risks.",
+      "Managed Kubernetes networking configurations, ensuring stable connectivity and secure communication between cloud-based services."
     ],
     image: "/projects/medicous.svg",
     link: "#",

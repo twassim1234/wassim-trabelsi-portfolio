@@ -28,8 +28,8 @@ const skills = [
   { name: "Microsoft Office", category: "Tools" },
 
   // Soft Skills
-  { name: "Team Work", category: "Soft Skills" },
-  { name: "Fast Learner", category: "Soft Skills" },
+  { name: "TeamWork", category: "Soft Skills" },
+  { name: "Fast Learning", category: "Soft Skills" },
   { name: "Communication", category: "Soft Skills" },
   { name: "Problem Solving", category: "Soft Skills" },
   { name: "Adaptability", category: "Soft Skills" },

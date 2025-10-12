@@ -5,7 +5,7 @@ const memberships = [
       role: "Head of operations (Outgoing Exchange) of AIESEC Polanld",
       duration: "2023 – Current",
       description: [
-        "Led campus initiatives and coordinated team activities.",
+        "Led country-level initiatives and oversaw team performance across multiple cities in Poland.",
         "Developed leadership, project management, and teamwork skills.",
         "working internationally with a board from 5 countries and people from 100+ countries."
       ],
