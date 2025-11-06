@@ -1,13 +1,26 @@
 const memberships = [
     {
       id: 0,
-      organization: "AIESEC",
-      role: "Head of operations (Outgoing Exchange) of AIESEC Polanld",
-      duration: "2023 – Current",
+      organization: "AIESEC of Poland",
+      role: "Head of operations (Outgoing Exchange)",
+      duration: "2025 – Current",
       description: [
         "Led country-level initiatives and oversaw team performance across multiple cities in Poland.",
         "Developed leadership, project management, and teamwork skills.",
         "working internationally with a board from 5 countries and people from 100+ countries."
+      ],
+      image: "/projects/Aiesec.png",
+      link: "#",
+    },
+    {
+      id: 0,
+      organization: "AIESEC Carthage Local Community(Tunisia)",
+      role: "Active Member and Team Leader ", 
+      duration: "2023 – 2025",
+      description: [
+        "Led initiatives and oversaw team performance.",
+        "Developed leadership, project management, and teamwork skills.",
+        "Built international partnerships and managed cross-cultural collaboration projects.",
       ],
       image: "/projects/Aiesec.png",
       link: "#",
