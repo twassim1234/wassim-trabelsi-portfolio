@@ -9,6 +9,7 @@ import {
   Twitter,
   Facebook,
   Github,
+  PhoneCall,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -26,29 +27,30 @@ export const ContactSection = () => {
     const form = e.target;
 
     emailjs
-    .sendForm(
-      "service_ouzpvbc",
-      "template_otywphn",
-      form,
-      "OKl83bhVxc81Ojkfu"
-    )
-    .then(
-      (result) => {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        setIsSubmitting(false);
-        form.reset();
-      },
-      (error) => {
-        toast({
-          title: "Error",
-          description: "Something went wrong. Please try again later.",
-        });
-        setIsSubmitting(false);
-      }
-    );
+      .sendForm(
+        "service_ouzpvbc",
+        "template_otywphn",
+        form,
+        "OKl83bhVxc81Ojkfu"
+      )
+      .then(
+        (result) => {
+          toast({
+            title: "Message sent!",
+            description:
+              "Thank you for your message. I'll get back to you soon.",
+          });
+          setIsSubmitting(false);
+          form.reset();
+        },
+        (error) => {
+          toast({
+            title: "Error",
+            description: "Something went wrong. Please try again later.",
+          });
+          setIsSubmitting(false);
+        }
+      );
   };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -82,23 +84,47 @@ export const ContactSection = () => {
                   >
                     wassim.trabelsi.pro@gmail.com
                   </a>
-                  
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-4 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+              <div className="flex items-start space-x-8">
+                <div className="p-4 rounded-full bg-primary/10 mt-4">
+                  <Phone className="h-6 w-6 text-primary " />{" "}
                 </div>
-                <div>
+                <div className="space-y-2">
                   <h4 className="font-medium"> Phone</h4>
+                  <div className="flex flex-col">
+                    <a
+                      href="tel:+216 58 187 123"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +48 730 049 149
+                    </a>
+                    <a
+                      href="tel:+216 58 187 123"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +216 58 187 123
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-8">
+                <div className="p-4 rounded-full bg-primary/10 mt-4">
+                  <PhoneCall className="h-6 w-6 text-primary" />
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-medium"> WhatsApp</h4>
                   <a
-                    href="tel:+216 58 187 123"
+                    href="https://wa.me/21658187123"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +216 58 187 123
+                    Chat on WhatsApp
                   </a>
                 </div>
               </div>
+
               <div className="flex items-start space-x-4">
                 <div className="p-4 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />{" "}
@@ -106,7 +132,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    lac2, Tunis, Tunisia
+                    wołomin warszawa
                   </a>
                 </div>
               </div>
@@ -130,8 +156,6 @@ export const ContactSection = () => {
                 >
                   <Github />
                 </a>
-                
-          
               </div>
             </div>
           </div>
@@ -149,7 +173,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                   Name
+                  Name
                 </label>
                 <input
                   type="text"
@@ -184,7 +208,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                   Email
+                  Email
                 </label>
                 <input
                   type="email"
@@ -202,7 +226,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                   Message
+                  Message
                 </label>
                 <textarea
                   id="message"
